@@ -1,0 +1,111 @@
+{% load static %}
+
+{% load bootstrap4 %}
+
+{# Load CSS and JavaScript #}
+{% bootstrap_css %}
+{% bootstrap_javascript jquery='full' %}
+{% bootstrap_messages %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <script src="{% static 'js/functions.js' %}"></script>
+    <script src="https://kit.fontawesome.com/25828b76a5.js" crossorigin="anonymous"></script>
+    <title>Youtube Downloader</title>
+</head>
+
+<body>
+    <div class="app">
+        
+        <div class="fixed">
+            <div class="main">
+                <h1> <i class="fab fa-youtube red"></i> Youtube Downloader </h1>
+                <input type="text" placeholder="Insira o URL do vídeo desejado." class="url"><br>
+                <button type="button" class="btn btn-primary" onclick="searchVideo()">Search</button>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="center">
+                <div class="watch-video">
+                    <img src="">
+                </div>
+                <div class="info">
+                    <div class="head">
+                        <div class="title">
+                            <h3>Titulo</h3>
+                        </div>
+                        <div class="channel">
+                            <h4>Canal</h4>
+                        </div>
+                        <div class="duration">
+                            <h5>00:00</h5>
+                        </div>
+                    </div>
+                    <div class="button-actions">
+                        <select name="" id="select">
+                            <option value="mp3">MP3</option>
+                            <option value="video">Video</option>
+                        </select>
+                        <div class="get-link">
+                            <button class="btn btn-success" onclick="generateLink(this)">Get Link</button>
+                        </div>
+                        <div class="loading">
+                            <i class='fa fa-circle-o-notch fa-spin'></i>
+                        </div>
+                    </div>
+                    <div class="alert-area">
+                        <div class="alert alert-warning" id="alert">
+                            <i class="fas fa-exclamation"></i> Por favor, aguarde enquanto geramos o link para seu download.
+                        </div>
+                        <div class="content-video">
+                            <a class="btn btn-success" id="download"><i class="fas fa-download"></i>Download</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content-loading">
+            <i class='fa fa-circle-o-notch fa-spin fa-2x'></i>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="content-footer">
+            <div class="left">
+                <div class="title">
+                    <h4>Contato:</h4>
+                </div>
+                <div class="fone">
+                    <h5>Telefone: </h5>
+                    <h6>(53) 99999-2129</h6>
+                </div>
+                <div class="email">
+                    <h5>E-mail: </h5>
+                    <h6> weliston2012@gmail.com</h6>
+                </div>
+            </div>
+            <div class="right">
+                <div class="title">
+                    <h4>Redes Sociais:</h4>
+                </div>
+                <div class="linkedin">
+                    <a href="https://www.linkedin.com/in/weliston-belles-472038214/" target="_blank"><h6>Linkedin </h6></a>
+                    <i class="fab fa-linkedin"></i>
+                </div>
+                <div class="github">
+                    <a href="https://github.com/welistonbelles/" target="_blank"><h6>Github</h6></i></a>
+                    <i class="fab fa-github"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

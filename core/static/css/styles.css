@@ -1,0 +1,406 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.app {
+    width: 1790px;
+    max-width: 100%;
+    height: 100%;
+    max-height: 937px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.app input[type='text'] {
+    width: 450px;
+    max-width: 70%;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid black;
+    padding-left: 10px;
+    margin-top: 5px;
+}
+
+.fixed {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.fixed .main {
+    width: 900px;
+    max-width: 90%;
+    height: 300px;
+    max-height: 98%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+}
+
+.fixed .btn {
+    background-color: crimson;
+    border: 1px solid white;
+}
+
+.fixed .btn:hover{ 
+    background-color: white;
+    border: 1px solid crimson;
+    color: crimson
+}
+
+.red {
+    color:crimson
+}
+
+.content {
+    width: 100%;
+    height: 30%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-loading {
+    width: 100%;
+    height: 30%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.center { 
+    width: 800px;
+    max-width: 98%;
+    height: 400px;
+    max-height: 98%;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f0f0;
+    border: 1px solid crimson;
+}
+
+
+.content .center .watch-video {
+    width: 50%;
+    max-width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content .center .watch-video img {
+    width: 90%;
+    max-width: 90%;
+    height: 90%;
+    max-height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+
+.content .center .info {
+    width: 50%;
+    max-width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.content .center .info .head {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.content .center .info .head .title {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+
+.content .center .info .head .title h3 {
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+
+.content .center .info .button-actions {
+    width: 70%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+}
+
+.content .center .info .button-actions select {
+    height: 30px;
+}
+
+.content .center .info .button-actions button {
+    height: 30px;
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content .center .info .button-actions .loading {
+    height: 30px;
+    margin-left: 5px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.content .center .info .alert-area {
+    width: 95%;
+    height: 30%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.content .center .info .alert-area #alert,
+.content .center .info .alert-area a {
+    display: none;
+}
+
+.content .center .info .alert-area #alert{
+    text-align: center;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.content .center .info .alert-area a{
+    width: 130px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+
+
+
+
+/* Footer Bar */
+
+footer {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: crimson;
+}
+
+.content-footer {
+    width: 100%;
+    max-width: 700px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-footer .left,
+.content-footer .right {
+    width: 50%;
+    height: 70%;
+    color: white;
+}
+
+.content-footer .left .title,
+.content-footer .right .title {
+    width: 100%;
+    height: 20;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-footer .left .fone,
+.content-footer .left .email {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-footer .right .linkedin,
+.content-footer .right .github {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-footer .right .linkedin i,
+.content-footer .right .github i {
+    padding-left: 5px;
+}
+
+
+.content-footer .left .fone h6,
+.content-footer .left .email h6{
+    padding-left: 5px;
+}
+
+.content-footer .right .linkedin a,
+.content-footer .right .github a {
+    text-decoration: none;
+    color: white;
+}
+
+.content-footer .right .linkedin a:hover,
+.content-footer .right .github a:hover {
+    color: black;
+}
+
+
+/* MEDIA QUERY */
+@media  (max-width: 487px) {
+    .fixed .main h1{
+        font-size: 30px;
+    }
+}
+
+@media  (max-width: 365px) {
+    .fixed .main h1{
+        font-size: 25px;
+    }
+}
+
+
+@media  (max-width: 518px) {
+    .content-footer .left .title h4,
+    .content-footer .right .title h4 {
+        font-size: 20px;
+    }
+    .content-footer .left .fone h5,
+    .content-footer .left .email h5,
+    .content-footer .right .linkedin a,
+    .content-footer .right .github a {
+        font-size: 12px;
+    }
+    .content-footer .left .fone h6,
+    .content-footer .left .email h6{
+        font-size: 10px;
+    }
+}
+
+@media  (max-width: 764px) {
+    .center .info .head .title h3 {
+        font-size: 25px;
+    }
+}
+
+@media  (max-width: 680px) {
+    .center .info .head .title h3 {
+        font-size: 20px;
+    }
+}
+
+@media  (max-width: 550px) {
+    .content {
+        height: 50%;
+        margin-top: -20%;
+    }
+    .center {
+        flex-direction: column;
+    }
+
+    .content .center .watch-video {
+        width: 400px;
+        max-width: 80%;
+    }
+
+    .content .center .info {
+        width: 500px;
+        max-width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .content .center .info .head {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .content .center .info .head .title {
+        display: inline-block;
+    }
+
+    .center .info .head .title h3 {
+        font-size: 18px;
+    }
+
+    .center .info .head .channel h4 {
+        font-size: 14px;
+    }
+
+    .center .info .head .duration h5 {
+        font-size: 12px;
+    }
+
+    .content .center .info .button-actions {
+        width: 400px;
+        max-width: 80%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .content .center .info .alert-area {
+        justify-content: center;
+        width: 98%;
+    }
+
+    .content .center .info .alert-area .alert {
+        font-size: 14px;
+    }
+}
+
+@media  (max-width: 460px) {
+    .center .info .head .title h3 {
+        font-size: 16px;
+    }
+}
+
+@media  (max-width: 394px) {
+    .center .info .head .title h3 {
+        font-size: 14px;
+    }
+}
+
+@media  (max-width: 355px) {
+    .center .info .head .title h3 {
+        font-size: 12px;
+    }
+}
