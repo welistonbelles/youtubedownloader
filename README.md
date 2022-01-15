@@ -9,7 +9,7 @@
 </p>
 
 # Sobre
-<p>Este projeto foi construído com o intuito de praticar o uso de Django.<br>
+<p>Este é um projeto simples, que foi construído com o intuito de praticar o uso de Django.<br>
 Consiste em um gerenciador de downloads, feito exclusivamente para realizar o downloa de videos/musicas do youtube .</p>
 
 # Tecnologias
